@@ -1,0 +1,88 @@
+*{
+  margin:0;
+  padding: 0;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    
+    /* For demonstration - replace with actual content height */
+  }
+  
+  nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+
+  }
+
+  nav ul{
+    width: 100%;
+    list-style:none;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+
+  }
+  nav li{
+    height:70px;
+
+  }
+
+  nav a{
+    height: 100px;
+    padding:0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items:center;
+    color:black;
+  }
+
+  nav a:hover{
+    background-color:rgb(113, 144, 245);
+  
+  }
+
+  nav li:first-child{
+    margin-right: auto;
+  }
+  .sidebar{
+    position:fixed;
+    top:0;
+    right:0;
+    height:100vh;
+    width:250px;
+    z-index: 999;
+    background-color: white;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:flex-start;
+  }
+  .sidebar li{
+    width: 100%;
+  }
+  .sidebar a{
+    width: 100%;
+  }
+  @media(max-width:800px){
+    .hideOnMobile{
+      display: none;
+    }
+  }
+
+  nav.scrolled {
+    background-color: blueviolet/* Your desired background color for scrolled state */;
+    /* Add other style changes for the scrolled state */
+  }
+  
+  /* Example color change for the links in the scrolled state */
+  nav.scrolled a {
+    color:aqua /* Your desired font color for scrolled state */;
+  }
+  
